@@ -1,0 +1,14 @@
+html,
+body {
+    margin: 0;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+#glcanvas {
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
