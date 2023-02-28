@@ -1,4 +1,4 @@
-# GAMES202-Assignment-Framework-with-TypeScript-Support
+# GAMES202 Assignment Framework with TypeScript Support
 
 <div align="center">
   <img src="https://picx.zhimg.com/v2-41eb81c245376255947091608fcd4c91_1440w.jpg?source=172ae18b" alt="Logo" style="max-width: 100%; object-fit: cover; width: 360px;">
