@@ -25,14 +25,14 @@ GAMES202 课程作业大都基于 WebGL 实现。得益于 WebGL 简单易用的
 
 下表列出了迁移进度，你可以直接点击链接转跳到对应分支浏览并下载代码框架，也可以直接使用 `git clone -b <branch> <url>` 指令下载对应分支代码。
 
-|      |                    题目                     |                现状                 |
-| :--: | :-----------------------------------------: | :---------------------------------: |
-|  00  | WebGL 框架的使用<br>与 Blinn-Phong 着色模型 |                可用                 |
-|  01  |                  实时阴影                   |               计划中                |
-|  02  |        Precomputed Radiance Transfer        |               计划中                |
-|  03  |          Screen Space Ray Tracing           |               计划中                |
-|  04  |              Kulla-Conty BRDF               |               计划中                |
-|  05  |              实时光线追踪降噪               | 暂无计划<br>（毕竟这次作业要用C++） |
+|      |                    题目                     |                             现状                             |
+| :--: | :-----------------------------------------: | :----------------------------------------------------------: |
+|  00  | WebGL 框架的使用<br>与 Blinn-Phong 着色模型 | [可用](https://github.com/vonbrank/GAMES202-Assignment-Framework-with-TypeScript-Support/tree/assignment-00) |
+|  01  |                  实时阴影                   |                            计划中                            |
+|  02  |        Precomputed Radiance Transfer        |                            计划中                            |
+|  03  |          Screen Space Ray Tracing           |                            计划中                            |
+|  04  |              Kulla-Conty BRDF               |                            计划中                            |
+|  05  |              实时光线追踪降噪               |             暂无计划<br>（毕竟这次作业要用C++）              |
 
 ## 使用方法
 
