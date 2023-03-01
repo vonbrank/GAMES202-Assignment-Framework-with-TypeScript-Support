@@ -1,5 +1,5 @@
 import { Shader } from "../shaders/Shader";
-import { vec3 } from "gl-matrix";
+import { vec3, mat4 } from 'gl-matrix';
 import { Texture } from "../textures/Texture";
 
 type Uniform =
@@ -17,7 +17,7 @@ type Uniform =
       }
     | {
           type: "3fv";
-          value: Float32List;
+          value: vec3;
       }
     | {
           type: "uKd";
@@ -25,7 +25,7 @@ type Uniform =
       }
     | {
           type: "matrix4fv";
-          value: Float32List;
+          value: mat4;
       };
 export class Material {
     private flatten_uniforms;

@@ -109,7 +109,7 @@ export function loadOBJ(renderer: WebGLRenderer, path: string, name: string) {
                                             },
                                             uKd: {
                                                 type: "3fv",
-                                                value: mat.color.toArray(),
+                                                value: new Float32Array(mat.color.toArray()),
                                             },
                                         },
                                         [],
@@ -125,7 +125,7 @@ export function loadOBJ(renderer: WebGLRenderer, path: string, name: string) {
                                             },
                                             uKd: {
                                                 type: "3fv",
-                                                value: mat.color.toArray(),
+                                                value: new Float32Array(mat.color.toArray()),
                                             },
                                         },
                                         [],
