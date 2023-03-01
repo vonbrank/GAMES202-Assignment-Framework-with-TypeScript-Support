@@ -42,13 +42,13 @@ export function loadOBJ(renderer: WebGLRenderer, path: string, name: string) {
 
                             if (child.isMesh) {
                                 let geo = child.geometry;
-                                let mat: THREE.MeshBasicMaterial;
+                                let mat: THREE.MeshPhongMaterial;
                                 if (Array.isArray(child.material))
                                     mat = child
-                                        .material[0] as THREE.MeshBasicMaterial;
+                                        .material[0] as THREE.MeshPhongMaterial;
                                 else
                                     mat =
-                                        child.material as THREE.MeshBasicMaterial;
+                                        child.material as THREE.MeshPhongMaterial;
 
                                 var indices = Array.from(
                                     { length: geo.attributes.position.count },
