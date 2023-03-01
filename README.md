@@ -1,9 +1,10 @@
-# GAMES202 Assignment Framework with TypeScript Support
-
 <div align="center">
   <img src="https://picx.zhimg.com/v2-41eb81c245376255947091608fcd4c91_1440w.jpg?source=172ae18b" alt="Logo" style="max-width: 100%; object-fit: cover; width: 360px;">
+
+  <h3 align="center">GAMES202 Assignment Framework with TypeScript Support</h3>
+
   <p align="center">
-    【GAMES202 代码框架】 × 【Vite + TypeScript】
+    【GAMES202】 × 【Vite + TypeScript】
   </p>
 </div>
 
@@ -28,7 +29,7 @@ GAMES202 课程作业大都基于 WebGL 实现。得益于 WebGL 简单易用的
 |      |                    题目                     |                             现状                             |
 | :--: | :-----------------------------------------: | :----------------------------------------------------------: |
 |  00  | WebGL 框架的使用<br>与 Blinn-Phong 着色模型 | [可用](https://github.com/vonbrank/GAMES202-Assignment-Framework-with-TypeScript-Support/tree/assignment-00) |
-|  01  |                  实时阴影                   |                            计划中                            |
+|  01  |                  实时阴影                   | [可用](https://github.com/vonbrank/GAMES202-Assignment-Framework-with-TypeScript-Support/tree/assignment-01) |
 |  02  |        Precomputed Radiance Transfer        |                            计划中                            |
 |  03  |          Screen Space Ray Tracing           |                            计划中                            |
 |  04  |              Kulla-Conty BRDF               |                            计划中                            |
