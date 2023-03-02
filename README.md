@@ -19,7 +19,7 @@ GAMES202 课程作业大都基于 [WebGL](https://developer.mozilla.org/zh-CN/do
 因此本项目针对 [GAMES202 官方作业代码框架](https://games-cn.org/forums/topic/games202zuoyehuizong/)进行简单修改，将原代码框架迁移至 [TypeScript](https://www.tslang.cn/)，使用 [Vite](https://vitejs.dev/) 进行打包，并引入 [ES Module](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules) 模块化，同时实现类型声明与静态检查，期望能提升开发体验。
 
 <div align="center">
-  <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--Sr-QUSUn--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/1jf8itjh1lracaaola8c.png" alt="JS to TS" style="max-width: 100%; object-fit: cover; width: 640px;">
+  <img src="https://vonbrank-images.oss-cn-hangzhou.aliyuncs.com/20230302-GAMES202-Assignment-Framework-with-TypeScript-Support/GAMES202-Assignment-Framework-with-TypeScript-Support-demo.png" alt="JS to TS" style="max-width: 100%; object-fit: cover; width: 540px;">
 </div>
 
 ## 获取代码框架
@@ -31,7 +31,7 @@ GAMES202 课程作业大都基于 [WebGL](https://developer.mozilla.org/zh-CN/do
 |  00  | WebGL 框架的使用与 Blinn-Phong 着色模型 | [可用](https://github.com/vonbrank/GAMES202-Assignment-Framework-with-TypeScript-Support/tree/assignment-00) |
 |  01  |                实时阴影                 | [可用](https://github.com/vonbrank/GAMES202-Assignment-Framework-with-TypeScript-Support/tree/assignment-01) |
 |  02  |      Precomputed Radiance Transfer      | [可用](https://github.com/vonbrank/GAMES202-Assignment-Framework-with-TypeScript-Support/tree/assignment-02) |
-|  03  |        Screen Space Ray Tracing         |                            计划中                            |
+|  03  |        Screen Space Ray Tracing         | [可用](https://github.com/vonbrank/GAMES202-Assignment-Framework-with-TypeScript-Support/tree/assignment-03) |
 |  04  |            Kulla-Conty BRDF             |                            计划中                            |
 |  05  |            实时光线追踪降噪             |             暂无计划<br>（毕竟这次作业要用C++）              |
 
@@ -56,3 +56,7 @@ GAMES202 课程作业大都基于 [WebGL](https://developer.mozilla.org/zh-CN/do
   ```
 
 + 根据终端提示访问对应 URL 查看效果。
+
+<div align="center">
+  <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--Sr-QUSUn--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/1jf8itjh1lracaaola8c.png" alt="JS to TS" style="max-width: 100%; object-fit: cover; width: 640px;">
+</div>
