@@ -20,7 +20,7 @@ class ShadowMaterial extends Material {
             [],
             vertexShader,
             fragmentShader,
-            light.fbo.framebuffer
+            light.fbo
         );
     }
 }

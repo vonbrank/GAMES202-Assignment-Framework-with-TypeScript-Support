@@ -1,12 +1,11 @@
 import { resolution } from "../engine";
-export class FBO {
-    framebuffer;
-    texture;
-    depthBuffer;
+export class FBO implements WebGLFramebuffer {
+    texture: WebGLTexture | null = null;
+    depthBuffer: WebGLRenderbuffer | null = null;
 
     constructor(gl: WebGLRenderingContext) {
         //创建帧缓冲区对象
-        const framebuffer = gl.createFramebuffer();
+        const framebuffer = gl.createFramebuffer() as FBO | null;
 
         //创建纹理对象并设置其尺寸和参数
         const texture = gl.createTexture();
@@ -38,9 +37,8 @@ export class FBO {
             throw "failed to create depth buffer";
         }
 
-        this.framebuffer = framebuffer;
-        this.texture = texture;
-        this.depthBuffer = depthBuffer;
+        framebuffer.texture = texture;
+        framebuffer.depthBuffer = depthBuffer;
 
         gl.bindTexture(gl.TEXTURE_2D, texture);
         gl.texImage2D(
@@ -98,6 +96,6 @@ export class FBO {
         gl.bindTexture(gl.TEXTURE_2D, null);
         gl.bindRenderbuffer(gl.RENDERBUFFER, null);
 
-        // return framebuffer;
+        return framebuffer;
     }
 }
