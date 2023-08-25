@@ -53,7 +53,7 @@ export async function buildPhongMaterial(
         light,
         translate,
         scale,
-        vertexShader as string,
-        fragmentShader as string
+        vertexShader,
+        fragmentShader
     );
 }
