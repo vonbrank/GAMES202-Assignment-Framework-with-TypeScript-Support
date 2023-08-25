@@ -83,10 +83,10 @@ export function GAMES202Main() {
     cameraTarget = [0, 0, 0];
     // */
     /*
-	// Cave
-	cameraPosition = [4.18927, 1.0313, 2.07331]
-	cameraTarget = [2.92191, 0.98, 1.55037]
-	*/
+    // Cave
+    cameraPosition = [4.18927, 1.0313, 2.07331]
+    cameraTarget = [2.92191, 0.98, 1.55037]
+    */
     camera.position.set(
         cameraPosition[0],
         cameraPosition[1],
@@ -123,15 +123,15 @@ export function GAMES202Main() {
     // Add light
     let lightPos: vec3, lightDir: LightDir, lightRadiance: vec3;
     /*
-	// Cave
-	lightRadiance = [20, 20, 20];
-	lightPos = [-0.45, 5.40507, 0.637043];
-	lightDir = {
-		'x': 0.39048811,
-		'y': -0.89896828,
-		'z': 0.19843153,
-	};
-	*/
+    // Cave
+    lightRadiance = [20, 20, 20];
+    lightPos = [-0.45, 5.40507, 0.637043];
+    lightDir = {
+        'x': 0.39048811,
+        'y': -0.89896828,
+        'z': 0.19843153,
+    };
+    */
     // /*
     // Cube
     lightRadiance = [1, 1, 1];
@@ -186,7 +186,7 @@ export function setTransform(
     r_x = 0,
     r_y = 0,
     r_z = 0
-) {
+): Transform {
     return {
         modelTransX: t_x,
         modelTransY: t_y,
@@ -197,5 +197,5 @@ export function setTransform(
         modelRotateX: r_x,
         modelRotateY: r_y,
         modelRotateZ: r_z,
-    } as Transform;
+    };
 }

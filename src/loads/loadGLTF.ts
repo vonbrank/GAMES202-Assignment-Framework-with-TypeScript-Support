@@ -30,17 +30,24 @@ export function loadGLTF(
             );
         }
     }
-    function onError() {}
+    function onError() { }
 
     new GLTFLoader(manager).setPath(path).load(name + ".gltf", function (gltf) {
         gltf.scene.traverse(function (event) {
-            const child = event as THREE.Mesh;
-            if (child.isMesh) {
+            const child = event;
+            if (child instanceof THREE.Mesh && child.isMesh) {
                 let geo = child.geometry;
-                let mat: THREE.MeshPhongMaterial;
-                if (Array.isArray(child.material))
-                    mat = child.material[0] as THREE.MeshPhongMaterial;
-                else mat = child.material as THREE.MeshPhongMaterial;
+                let mat = new THREE.MeshPhongMaterial;
+                if (Array.isArray(child.material)) {
+                    let firstMaterial = child
+                        .material[0];
+                    if (firstMaterial instanceof THREE.MeshPhongMaterial) {
+                        mat = firstMaterial;
+                    }
+                }
+                else if (child.material instanceof THREE.MeshPhongMaterial) {
+                    mat = child.material;
+                }
                 const gltfTransform = setTransform(
                     child.position.x,
                     child.position.y,
@@ -59,21 +66,15 @@ export function loadGLTF(
                 let mesh = new Mesh(
                     {
                         name: "aVertexPosition",
-                        array: new Float32Array(
-                            (geo.attributes.position as BufferAttribute).array
-                        ),
+                        array: new Float32Array(geo.attributes.position instanceof BufferAttribute ? geo.attributes.position.array : []),
                     },
                     {
                         name: "aNormalPosition",
-                        array: new Float32Array(
-                            (geo.attributes.normal as BufferAttribute).array
-                        ),
+                        array: new Float32Array(geo.attributes.normal instanceof BufferAttribute ? geo.attributes.normal.array : []),
                     },
                     {
                         name: "aTextureCoord",
-                        array: new Float32Array(
-                            (geo.attributes.uv as BufferAttribute).array
-                        ),
+                        array: new Float32Array(geo.attributes.uv instanceof BufferAttribute ? geo.attributes.uv.array : []),
                     },
                     Array.from(geo.index?.array || []),
                     gltfTransform
